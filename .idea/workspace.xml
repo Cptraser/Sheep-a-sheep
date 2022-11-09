@@ -2,36 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c05195e1-e901-4c55-ba02-23c30c9245bc" name="Default" comment="游戏结束实现">
-      <change afterPath="$PROJECT_DIR$/src/ylgy/BuildLayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ylgy/BulidMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ylgy/Start.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ylgy/model/Area.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ylgy/model/Brand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ylgy/model/Cell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ylgy/model/Eliminatebox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ylgy/model/Layer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ylgy/util/ImageUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/com/bjsxt/model/Brand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/com/bjsxt/model/Cell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/com/bjsxt/model/Layer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/com/bjsxt/model/Map.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/Start.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/TestBrand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/TestLayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/TestMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/TestRenderLayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/TestRenderMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/model/Brand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/model/Cell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/model/Eliminatebox.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/model/Layer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/model/Level.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/model/Map.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/model/Music.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/util/ImageColor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/util/ImageUtil.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,20 +139,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/SwordFlame/Desktop/sheep&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "C:/Users/Administrator/Desktop/Sheep-a-sheep",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\6-游戏小项目\羊了个羊\src\com\bjsxt\test" />
       <recent name="D:\6-游戏小项目" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.ylgy.Start">
+  <component name="RunManager" selected="Application.Eliminatebox">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -189,7 +167,7 @@
     </configuration>
     <configuration name="Eliminatebox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bjsxt.model.Eliminatebox" />
-      <module name="羊了个羊" />
+      <module name="ylgy" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -203,7 +181,7 @@
     </configuration>
     <configuration name="Start (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bjsxt.test.src.com.bjsxt.Start" />
-      <module name="羊了个羊" />
+      <module name="ylgy" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -217,7 +195,7 @@
     </configuration>
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bjsxt.Start" />
-      <module name="羊了个羊" />
+      <module name="ylgy" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -231,7 +209,7 @@
     </configuration>
     <configuration name="TestRenderMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bjsxt.test.TestRenderMap" />
-      <module name="羊了个羊" />
+      <module name="ylgy" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -270,7 +248,7 @@
     </configuration>
     <configuration name="ylgy.Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ylgy.Start" />
-      <module name="羊了个羊" />
+      <module name="ylgy" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -308,17 +286,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.Eliminatebox" />
-      <item itemvalue="应用程序.Start" />
-      <item itemvalue="应用程序.Start (1)" />
-      <item itemvalue="应用程序.TestRenderMap" />
-      <item itemvalue="应用程序.ylgy.Start" />
+      <item itemvalue="Application.Eliminatebox" />
+      <item itemvalue="Application.Start" />
+      <item itemvalue="Application.Start (1)" />
+      <item itemvalue="Application.TestRenderMap" />
+      <item itemvalue="Application.ylgy.Start" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="应用程序.ylgy.Start" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
