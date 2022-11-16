@@ -32,6 +32,15 @@ public class Eliminatebox {
         }
     }
 
+    public List<Brand> getSlot(){
+        return SLOT;
+    }
+    public void setSlot(){
+        SLOT.sort(Comparator.comparing(Brand::getName));
+        paint();
+    }
+
+
     public void addSlot(Brand brand){
         SLOT.add(brand);
         noMouseListener(brand);
@@ -54,7 +63,7 @@ public class Eliminatebox {
         for (int i =0;i<SLOT.size();i++){
             Brand brand = SLOT.get(i);
             int x = step + i * brand.getWidth() + 5/2 + 10;
-            brand.setBounds(x,600,50,50);
+            brand.setBounds(x, 600,brand.getWidth(),brand.getHeight());
         }
     }
     private void over(Brand brand){

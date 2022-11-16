@@ -13,6 +13,27 @@ public class BuildLayer {
             "胡萝卜","苹果","苹果",
             "铃铛","青草"
     };
+    public static Layer buildexaLayer(){
+        Layer layer = new Layer(3, 9);
+        Cell[][] cells = layer.getCells();
+        Brand[] brands = new Brand[layer.getCapacity()];
+        int cnt = 0;
+        for (Brand brand : brands){
+            brand = new Brand("empty");
+        }
+        for (int i = 0; i < cells.length; i++) {
+            for (int j = 0; j < cells[i].length; j++) {
+                Brand brand = brands[cnt];
+                Cell cell = new Cell(brand);
+                brand.setCell(cell);
+                cells[i][j]=cell;
+                cnt++;
+            }
+        }
+        layer.setSize(cnt);
+        return layer;
+    }
+
     public static Layer buildLayer(int cellNumx, int cellNumy){
         Layer layer = new Layer(cellNumx, cellNumy);
         Cell[][] cells = layer.getCells();

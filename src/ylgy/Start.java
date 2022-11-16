@@ -4,6 +4,8 @@ import ylgy.model.*;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ExecutorService;
@@ -22,19 +24,16 @@ public class Start extends JFrame{
         init();
         createMap();
 
-        Bottom upmove = new Bottom("上移", 30, 700);
+        BottomUpmove upmove = new BottomUpmove("上移", 30, 700);
         this.getContentPane().add(upmove);
 
-        Bottom reborn = new Bottom("复活", 130, 700);
-        this.getContentPane().add(reborn);
+//        Bottom revoke = new Bottom("撤销", 180, 700);
+//        this.getContentPane().add(revoke);
+//
+//        Bottom shuffle = new Bottom("打乱", 330, 700);
+//        this.getContentPane().add(shuffle);
 
-        Bottom revoke = new Bottom("撤销", 230, 700);
-        this.getContentPane().add(revoke);
-
-        Bottom shuffle = new Bottom("打乱", 330, 700);
-        this.getContentPane().add(shuffle);
-
-        xc.setBounds(0,575,450,800);
+        xc.setBounds(0,575,430,110);
         this.getContentPane().add(xc);
 
         bj.setBounds(0,0,450,800);

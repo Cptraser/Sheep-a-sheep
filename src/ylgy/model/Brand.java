@@ -36,15 +36,15 @@ public class Brand extends Component{
             @Override
             public void mouseClicked(MouseEvent e) {
                 Brand brand = (Brand) e.getSource();
-                if(brand.getGray() || Objects.equals("消除区域", brand.getName()) || Objects.equals("背景草地", brand.getName())){
+                if(Objects.equals("消除区域", brand.getName()) || Objects.equals("背景草地", brand.getName()) || brand.getCell().getState()==1 || brand.getGray()){
                     return ;
                 } else {
                     System.out.println(brand.getName()+"被点击");
                     eliminatebox.addSlot(brand);
                     self.getCell().setState(1);
                     Start.map.checkClr();
-                    self.getCell().setBrand(null);
-                    self.setCell(null);
+//                    self.getCell().setBrand(null);
+//                    self.setCell(null);
                     Start.map.grayCheck();
 
                 }
