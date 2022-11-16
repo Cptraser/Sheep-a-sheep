@@ -21,11 +21,25 @@ public class Start extends JFrame{
     public Start() throws HeadlessException{
         init();
         createMap();
+
+        Bottom upmove = new Bottom("上移", 30, 700);
+        this.getContentPane().add(upmove);
+
+        Bottom reborn = new Bottom("复活", 130, 700);
+        this.getContentPane().add(reborn);
+
+        Bottom revoke = new Bottom("撤销", 230, 700);
+        this.getContentPane().add(revoke);
+
+        Bottom shuffle = new Bottom("打乱", 330, 700);
+        this.getContentPane().add(shuffle);
+
         xc.setBounds(0,575,450,800);
         this.getContentPane().add(xc);
 
         bj.setBounds(0,0,450,800);
         this.getContentPane().add(bj);
+
 
         refresh();
     }

@@ -59,7 +59,7 @@ public class Eliminatebox {
     }
     private void over(Brand brand){
         if (SLOT.size()>=7){
-            JOptionPane.showMessageDialog(brand,"over");
+            JOptionPane.showMessageDialog(brand,"Game Over~");
             System.exit(0);
         }
     }

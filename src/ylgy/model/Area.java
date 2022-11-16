@@ -1,5 +1,6 @@
 package ylgy.model;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,18 +21,24 @@ public class Area {
     public void setY(int y){ this.y = y; }
     public void setFloorHeight(int floorHeight){ this.floorHeight = floorHeight; }
     public void setLayers(List<Layer> layers){ this.layers = layers; }
+    public void checkClr(){
+        for (Layer layer : layers){
+            if(!layer.isClr()){
+                return ;
+            }
+        }
+        JOptionPane.showMessageDialog(null, "Win!");
+        System.exit(0);
+    }
 
     public void grayCheck(){
         List<Layer> list=this.getLayers();
-        // 第2层  索引为1  的层开始判定
         for (int i = 1; i <list.size(); i++) {
             Layer layer =list.get(i);
             for (int j = 0; j < layer.getCapacity(); j++) {
                 Cell cell = layer.getIndex(j);
                 if(cell.getState()==2){
-                    // 单元格当中有牌 才进行置灰判定
                     Brand brand = cell.getBrand();
-                    // 和上层的所有牌进行 交集判定
                     boolean flag= this.brand2layer(brand,layer.getParentLayer());
                     brand.setGray(flag);
                 }

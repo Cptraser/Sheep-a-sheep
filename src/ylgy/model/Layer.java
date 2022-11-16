@@ -71,6 +71,16 @@ public class Layer {
     public void setSize(int size) {
         this.size = size;
     }
+    public boolean isClr(){
+        for (Cell[] cell : cells) {
+            for (Cell value : cell) {
+                if (value.getState() == 2) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
     public void setParentLayer(Layer parentLayer) {
         this.parentLayer = parentLayer;
     }
@@ -87,7 +97,7 @@ public class Layer {
         }
     }
     public Cell getIndex(int index){
-        int index_x = index/this.getCellNumx();
+        int index_x = index/this.getCellNumy();
         int index_y = index%this.getCellNumy();
         return this.cells[index_x][index_y];
     }
