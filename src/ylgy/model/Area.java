@@ -12,11 +12,14 @@ public class Area {
     private int y;
     private int floorHeight;
     private List<Layer> layers = new ArrayList<>();
+    private Layer exlayer = null;
     public Area(){}
     public int getX(){ return x; }
     public int getY(){ return y; }
     public int getFloorHeight(){ return floorHeight; }
     public List<Layer> getLayers(){ return layers; }
+    public void setexLayer(Layer exlayer){ this.exlayer = exlayer; }
+    public Layer getexLayer(){ return exlayer; }
     public void setX(int x){ this.x = x; }
     public void setY(int y){ this.y = y; }
     public void setFloorHeight(int floorHeight){ this.floorHeight = floorHeight; }

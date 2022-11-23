@@ -12,14 +12,14 @@ public class BulidMap {
         Layer layer1 = BuildLayer.buildLayer(3, 6);
         Layer layer2 = BuildLayer.buildLayer(4, 6);
         Layer layer3 = BuildLayer.buildLayer(6, 7);
-        Layer exalayer = BuildLayer.buildexaLayer();
+        Layer exlayer = BuildLayer.buildexLayer();
         layer1.setParentLayer(null);
         layer2.setParentLayer(layer1);
         layer3.setParentLayer(layer2);
         map.getLayers().add(layer1);
         map.getLayers().add(layer2);
         map.getLayers().add(layer3);
-        map.getLayers().add(exalayer);
+        map.setexLayer(exlayer);
         return map;
     }
 

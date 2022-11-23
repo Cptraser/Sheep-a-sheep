@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c05195e1-e901-4c55-ba02-23c30c9245bc" name="Default" comment="游戏结束实现">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ylgy/Bottom/BottomShuffle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ylgy/TestSleep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/BottomUpmove$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/BottomUpmove.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/util/ImageUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/util/ImageUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/ylgy/BuildLayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/ylgy/BulidMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/ylgy/Start.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/ylgy/model/Area.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/ylgy/model/Brand$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/ylgy/model/Brand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/ylgy/model/Cell.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/ylgy/model/Eliminatebox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/ylgy/model/Layer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/ylgy/util/ImageUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/BuildLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/BuildLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/BulidMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/BulidMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/model/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/model/Area.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/model/BottomUpmove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/Bottom/BottomUpmove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/model/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/model/Brand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/model/Eliminatebox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/model/Eliminatebox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/model/Layer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/model/Layer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +167,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Desktop/Sheep-a-sheep&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
@@ -157,7 +179,7 @@
       <recent name="D:\6-游戏小项目" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ylgy.Start">
+  <component name="RunManager" selected="Application.MySleep">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -165,13 +187,27 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="Eliminatebox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bjsxt.model.Eliminatebox" />
-      <module name="ylgy" />
+    <configuration name="ImageUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ylgy.util.ImageUtil" />
+      <module name="Sheep-a-sheep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bjsxt.model.*" />
+          <option name="PATTERN" value="ylgy.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MySleep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ylgy.MySleep" />
+      <module name="Sheep-a-sheep" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ylgy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -186,20 +222,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.bjsxt.test.src.com.bjsxt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bjsxt.Start" />
-      <module name="ylgy" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bjsxt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -287,15 +309,17 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Eliminatebox" />
-      <item itemvalue="Application.Start" />
+      <item itemvalue="Application.MySleep" />
+      <item itemvalue="Application.ImageUtil" />
       <item itemvalue="Application.Start (1)" />
       <item itemvalue="Application.TestRenderMap" />
       <item itemvalue="Application.ylgy.Start" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MySleep" />
         <item itemvalue="Application.ylgy.Start" />
+        <item itemvalue="Application.ImageUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -409,6 +433,11 @@
         <watch expression="map.layers.get(1)" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Sheep_a_sheep$ylgy_Start.ic" NAME="ylgy.Start Coverage Results" MODIFIED="1669114777100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ylgy.*</FILTER>
+    </SUITE>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/imgs/胡萝卜_gray.png">

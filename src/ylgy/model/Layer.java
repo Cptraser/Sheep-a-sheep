@@ -3,7 +3,7 @@ package ylgy.model;
 import java.util.Random;
 
 public class Layer {
-    private int offset =10;
+    private int offset = 10;
 
     private int x;
     private int y;
@@ -91,15 +91,18 @@ public class Layer {
         }
         for (Cell[] cell : cells) {
             for (Cell value : cell) {
+                if(value==null) {
+                    continue;
+                }
                 System.out.print(value.getBrand().getName());
             }
             System.out.println();
         }
     }
     public Cell getIndex(int index){
-        int index_x = index/this.getCellNumy();
-        int index_y = index%this.getCellNumy();
-        return this.cells[index_x][index_y];
+        int indexX = index/this.getCellNumy();
+        int indexY = index%this.getCellNumy();
+        return this.cells[indexX][indexY];
     }
     public Layer getParentLayer() {
         return  this.parentLayer;

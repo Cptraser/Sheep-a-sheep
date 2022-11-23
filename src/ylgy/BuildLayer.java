@@ -2,6 +2,7 @@ package ylgy;
 
 import ylgy.model.*;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class BuildLayer {
@@ -13,24 +14,13 @@ public class BuildLayer {
             "胡萝卜","苹果","苹果",
             "铃铛","青草"
     };
-    public static Layer buildexaLayer(){
+    public static Layer buildexLayer(){
         Layer layer = new Layer(3, 9);
         Cell[][] cells = layer.getCells();
-        Brand[] brands = new Brand[layer.getCapacity()];
-        int cnt = 0;
-        for (Brand brand : brands){
-            brand = new Brand("empty");
+        for (Cell[] cell : cells) {
+            Arrays.fill(cell, null);
         }
-        for (int i = 0; i < cells.length; i++) {
-            for (int j = 0; j < cells[i].length; j++) {
-                Brand brand = brands[cnt];
-                Cell cell = new Cell(brand);
-                brand.setCell(cell);
-                cells[i][j]=cell;
-                cnt++;
-            }
-        }
-        layer.setSize(cnt);
+        layer.setSize(0);
         return layer;
     }
 
@@ -61,7 +51,7 @@ public class BuildLayer {
                 Brand brand = brands[cnt];
                 Cell cell = new Cell(brand);
                 brand.setCell(cell);
-                cells[i][j]=cell;
+                cells[i][j] = cell;
                 cnt++;
             }
         }

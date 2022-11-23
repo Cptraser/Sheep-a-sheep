@@ -1,11 +1,10 @@
 package ylgy;
 
+import ylgy.Bottom.BottomUpmove;
 import ylgy.model.*;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ExecutorService;
@@ -16,6 +15,8 @@ import java.util.concurrent.*;
  * @author SwordFlame
  */
 public class Start extends JFrame{
+    public static int cnt = 0;
+    public static Eliminatebox eliminatebox = new Eliminatebox();
     private Brand bj = new Brand("背景草地");
     private Brand xc = new Brand("消除区域");
 
@@ -49,7 +50,7 @@ public class Start extends JFrame{
         int width = 450;
         int height = 800;
         this.setSize(width, height);
-        this.setTitle("羊了个羊第一关");
+        this.setTitle("羊了个羊2.0");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
         this.setBounds(0, 0, 450, 800);
@@ -68,12 +69,12 @@ public class Start extends JFrame{
         for (int i = 0; i < cells.length; ++i){
             for (int j = 0; j < cells[i].length; ++j){
                 Cell cell = cells[i][j];
-                if(cell.getState()==2){
+                if(cell.getState() == 2){
                     Brand brand = cell.getBrand();
                     int brandx = j*50 + layer.getOffset();
                     int brandy = i*50 + layer.getOffset();
                     brand.setBounds(brandx, brandy, 50, 50);
-                    this.getContentPane().add(brand);
+                    container.add(brand);
                 }
             }
         }
@@ -93,6 +94,7 @@ public class Start extends JFrame{
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+//                map.getexLayer().show();
                 repaint();
             }
         };

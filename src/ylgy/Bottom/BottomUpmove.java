@@ -1,16 +1,18 @@
-package ylgy.model;
+package ylgy.Bottom;
+
+import ylgy.Start;
+import ylgy.model.Brand;
+import ylgy.model.Cell;
 
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Objects;
 
 public class BottomUpmove extends JButton{
     private int x;
     private int y;
-    private static int cnt = 0;
     public BottomUpmove(String label, int x, int y){
         this.setText(label);
         this.x = x;
@@ -23,29 +25,30 @@ public class BottomUpmove extends JButton{
             @Override
             public void mousePressed(MouseEvent e) {
                 BottomUpmove upmove = (BottomUpmove) e.getSource();
-                List<Brand> slot = eliminatebox.getSlot();
-                int lim = 3;
-                if (slot.size()<3){
-                    lim = slot.size();
-                }
+                List<Brand> slot = Start.eliminatebox.getSlot();
+                int lim = Math.min(slot.size(), 3);
                 int i = 0;
                 Iterator<Brand> iterator = slot.iterator();
+                Cell[][] cells = Start.map.getexLayer().getCells();
                 while(i<lim && iterator.hasNext()){
                     Brand brand = iterator.next();
-                    int x = (cnt % 9) * brand.getWidth();
-                    int y = (cnt / 9) * brand.getHeight() + 400;
-                    brand.setBounds(x, y, brand.getWidth(), brand.getHeight());
-                    brand.getCell().setState(2);
+                    int x = (Start.cnt % 9) * 50;
+                    int y = (Start.cnt / 9) * 50 + 400;
+//                    brand.setTX(x);
+//                    brand.setTY(y);
+                    brand.setBounds(x, y, 50, 50);
+                    cells[Start.cnt/9][Start.cnt%9] = new Cell(brand);
+                    brand.setCell(cells[Start.cnt/9][Start.cnt%9]);
                     iterator.remove();
                     ++i;
-                    ++cnt;
+                    ++Start.cnt;
                 }
-                eliminatebox.setSlot();
+                Start.map.getexLayer().setCells(cells);
+//                Start.map.getexLayer().show();
+                Start.eliminatebox.setSlot();
             }
         });
     }
-
-    Eliminatebox eliminatebox = new Eliminatebox();
 
     public void setX(int x){ this.x = x; }
     public void setY(int y){ this.y = y; }
