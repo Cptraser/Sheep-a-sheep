@@ -1,5 +1,6 @@
 package ylgy;
 
+import ylgy.Bottom.BottomShuffle;
 import ylgy.Bottom.BottomUpmove;
 import ylgy.model.*;
 
@@ -31,8 +32,8 @@ public class Start extends JFrame{
 //        Bottom revoke = new Bottom("撤销", 180, 700);
 //        this.getContentPane().add(revoke);
 //
-//        Bottom shuffle = new Bottom("打乱", 330, 700);
-//        this.getContentPane().add(shuffle);
+        BottomShuffle shuffle = new BottomShuffle("打乱", 330, 700);
+        this.getContentPane().add(shuffle);
 
         xc.setBounds(0,575,430,110);
         this.getContentPane().add(xc);
