@@ -55,7 +55,7 @@ public class Area {
                 Brand temp = cell.getBrand();
                 boolean flag = brand.getBounds().intersects(temp.getBounds());
                 if(flag){
-                    return flag;
+                    return true;
                 }
             }
         }

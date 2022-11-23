@@ -2,16 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c05195e1-e901-4c55-ba02-23c30c9245bc" name="Default" comment="游戏结束实现">
+      <change afterPath="$PROJECT_DIR$/src/ylgy/Bottom/BottomRevoke.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ylgy/model/History.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ylgy/util/ShuffleUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Bottom/BottomShuffle$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Bottom/BottomShuffle$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Bottom/BottomShuffle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Bottom/BottomShuffle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Bottom/BottomUpmove$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Bottom/BottomUpmove$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Bottom/BottomUpmove.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Bottom/BottomUpmove.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/BuildLayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/BuildLayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/MySleep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/BulidMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/BulidMap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Start.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/TestSleep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Area.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Area.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Brand$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Brand$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Brand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Brand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Cell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Cell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Eliminatebox.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Eliminatebox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Layer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Layer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/util/ImageUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/util/ImageUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ylgy/Bottom/BottomShuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/Bottom/BottomShuffle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/Bottom/BottomUpmove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/Bottom/BottomUpmove.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ylgy/BuildLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/BuildLayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ylgy/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ylgy/TestSleep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/model/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/model/Area.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/model/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/model/Brand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/model/Eliminatebox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/model/Eliminatebox.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +181,7 @@
       <recent name="D:\6-游戏小项目" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ylgy.Start">
+  <component name="RunManager" selected="应用程序.ylgy.Start">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -295,17 +311,15 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MySleep" />
-      <item itemvalue="Application.ImageUtil" />
-      <item itemvalue="Application.Start (1)" />
-      <item itemvalue="Application.TestRenderMap" />
-      <item itemvalue="Application.ylgy.Start" />
+      <item itemvalue="应用程序.ImageUtil" />
+      <item itemvalue="应用程序.MySleep" />
+      <item itemvalue="应用程序.Start (1)" />
+      <item itemvalue="应用程序.TestRenderMap" />
+      <item itemvalue="应用程序.ylgy.Start" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ylgy.Start" />
-        <item itemvalue="Application.MySleep" />
-        <item itemvalue="Application.ImageUtil" />
+        <item itemvalue="应用程序.ylgy.Start" />
       </list>
     </recent_temporary>
   </component>

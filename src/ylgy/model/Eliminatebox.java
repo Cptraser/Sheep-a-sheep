@@ -45,7 +45,7 @@ public class Eliminatebox {
 
     public void addSlot(Brand brand){
         SLOT.add(brand);
-        noMouseListener(brand);
+//        noMouseListener(brand);
         SLOT.sort(Comparator.comparing(Brand::getName));
         Map<String, List<Brand>> map = SLOT.stream().collect(Collectors.groupingBy(Brand::getName));
         Set<String> keys = map.keySet();
@@ -62,7 +62,7 @@ public class Eliminatebox {
     }
 
     public void paint(){
-        for (int i =0;i<SLOT.size();i++){
+        for (int i = 0; i < SLOT.size(); i++){
             Brand brand = SLOT.get(i);
             int x = step + i * brand.getWidth() + 5/2 + 10;
             brand.setBounds(x, 600,brand.getWidth(),brand.getHeight());

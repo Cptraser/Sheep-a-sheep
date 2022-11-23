@@ -34,9 +34,8 @@ public class BottomUpmove extends JButton{
                     Brand brand = iterator.next();
                     int x = (Start.cnt % 9) * 50;
                     int y = (Start.cnt / 9) * 50 + 400;
-//                    brand.setTX(x);
-//                    brand.setTY(y);
                     brand.setBounds(x, y, 50, 50);
+
                     cells[Start.cnt/9][Start.cnt%9] = new Cell(brand);
                     brand.setCell(cells[Start.cnt/9][Start.cnt%9]);
                     iterator.remove();

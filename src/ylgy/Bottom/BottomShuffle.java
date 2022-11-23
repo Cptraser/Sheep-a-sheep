@@ -3,12 +3,14 @@ package ylgy.Bottom;
 import ylgy.BuildLayer;
 import ylgy.Start;
 import ylgy.model.*;
+import ylgy.util.ImageUtil;
 
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 
 /**
  * @author SwordFlame
@@ -33,6 +35,7 @@ public class BottomShuffle extends JButton {
                 for (Layer layer : layers){
                     layerShuffle(layer);
                 }
+                Start.map.grayCheck();
             }
         });
     }
@@ -40,25 +43,14 @@ public class BottomShuffle extends JButton {
         Cell[][] cells = layer.getCells();
         Brand[] brands = new Brand[layer.getCapacity()];
         int tot = 0;
-        for(int i = 0; i < cells.length; ++i){
-            for(int j = 0; j < cells[i].length; ++j){
-                Cell cell = cells[i][j];
-                if(cell!=null && cell.getState()==2){
-                    brands[tot++] = cell.getBrand();
-                }
-            }
-        }
-        BuildLayer.shuffle(brands, tot);
-        tot = 0;
-        for(int i = 0; i < cells.length; ++i){
-            for(int j = 0; j < cells[i].length; ++j){
-                Cell cell = cells[i][j];
-                if(cell!=null && cell.getState()==2){
-                    Brand brand = brands[tot++];
-                    cell.setBrand( brand );
-                    int brandx = j*50 + layer.getOffset();
-                    int brandy = i*50 + layer.getOffset();
-                    brand.setBounds(brandx, brandy, 50, 50);
+        for (Cell[] value : cells) {
+            for (Cell cell : value) {
+                if (cell != null && cell.getState() == 2) {
+                    int rand = new Random().nextInt(BuildLayer.brandNames.length);
+                    String brandName = BuildLayer.brandNames[rand];
+                    cell.getBrand().setName(brandName);
+                    cell.getBrand().setImage(ImageUtil.get(brandName + ".png"));
+                    cell.getBrand().setGrayImage(ImageUtil.get(brandName + "_gray.png"));
                 }
             }
         }

@@ -1,5 +1,6 @@
 package ylgy;
 
+import ylgy.Bottom.BottomRevoke;
 import ylgy.Bottom.BottomShuffle;
 import ylgy.Bottom.BottomUpmove;
 import ylgy.model.*;
@@ -18,8 +19,6 @@ import java.util.concurrent.*;
 public class Start extends JFrame{
     public static int cnt = 0;
     public static Eliminatebox eliminatebox = new Eliminatebox();
-    private Brand bj = new Brand("背景草地");
-    private Brand xc = new Brand("消除区域");
 
     public static Area map = BulidMap.buildMap();
     public Start() throws HeadlessException{
@@ -29,15 +28,17 @@ public class Start extends JFrame{
         BottomUpmove upmove = new BottomUpmove("上移", 30, 700);
         this.getContentPane().add(upmove);
 
-//        Bottom revoke = new Bottom("撤销", 180, 700);
-//        this.getContentPane().add(revoke);
-//
+        BottomRevoke revoke = new BottomRevoke("撤销", 180, 700);
+        this.getContentPane().add(revoke);
+
         BottomShuffle shuffle = new BottomShuffle("打乱", 330, 700);
         this.getContentPane().add(shuffle);
 
+        Brand xc = new Brand("消除区域");
         xc.setBounds(0,575,430,110);
         this.getContentPane().add(xc);
 
+        Brand bj = new Brand("背景草地");
         bj.setBounds(0,0,450,800);
         this.getContentPane().add(bj);
 
@@ -101,7 +102,6 @@ public class Start extends JFrame{
         };
         threadPool.execute(runnable);
     }
-
 
 
     public static void main(String[] args) {

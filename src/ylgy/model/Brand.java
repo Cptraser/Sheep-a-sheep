@@ -1,6 +1,7 @@
 package ylgy.model;
 
 import ylgy.Start;
+import ylgy.model.History;
 import ylgy.util.ImageUtil;
 
 import javax.swing.*;
@@ -21,8 +22,6 @@ public class Brand extends Component{
     private String id;
     private int x = 0;
     private int y = 0;
-    private int tx = 0;
-    private int ty = 0;
     private Cell cell;
     private Image image;
     private Image grayImage;
@@ -37,19 +36,20 @@ public class Brand extends Component{
         this.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
                 Brand brand = (Brand) e.getSource();
                 if(Objects.equals("消除区域", brand.getName()) || Objects.equals("背景草地", brand.getName()) || brand.getCell().getState()==1 || brand.getGray()){
                     System.out.println(brand.getName());
                     return ;
                 } else {
                     System.out.println(brand.getName()+"被点击");
-                    Start.eliminatebox.addSlot(brand);
+                    History.operate("click", brand);
                     self.getCell().setState(1);
                     Start.map.checkClr();
 //                    self.getCell().setBrand(null);
 //                    self.setCell(null);
+                    Start.eliminatebox.addSlot(brand);
                     Start.map.grayCheck();
-
                 }
             }
         });
@@ -66,10 +66,6 @@ public class Brand extends Component{
     }
 
 
-    public void setTX(int tx){ this.tx = tx; }
-    public void setTY(int ty){ this.ty = ty; }
-    public int getTX(){ return tx; }
-    public int getTY(){ return ty; }
     public Cell getCell() { return cell; }
     public void setCell(Cell cell) { this.cell = cell; }
     public Boolean getGray() { return isGray; }
