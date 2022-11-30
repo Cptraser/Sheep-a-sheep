@@ -30,6 +30,9 @@ public class Area {
                 return ;
             }
         }
+        if(!exlayer.isClr()){
+            return ;
+        }
         JOptionPane.showMessageDialog(null, "Win!");
         System.exit(0);
     }

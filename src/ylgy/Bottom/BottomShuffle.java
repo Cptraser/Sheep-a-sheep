@@ -35,6 +35,7 @@ public class BottomShuffle extends JButton {
                 for (Layer layer : layers){
                     layerShuffle(layer);
                 }
+                layerShuffle(Start.map.getexLayer());
                 Start.map.grayCheck();
             }
         });

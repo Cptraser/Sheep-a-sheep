@@ -8,7 +8,7 @@ import java.util.Random;
 import static ylgy.util.ShuffleUtil.shuffle;
 
 public class BuildLayer {
-    public  static String[] brandNames={
+    public static String[] brandNames={
             "刷子","剪刀","叉子",
             "手套","水桶","火",
             "玉米","球","瓶子",

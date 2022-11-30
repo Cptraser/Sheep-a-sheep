@@ -4,13 +4,16 @@ import ylgy.Bottom.BottomRevoke;
 import ylgy.Bottom.BottomShuffle;
 import ylgy.Bottom.BottomUpmove;
 import ylgy.model.*;
+import ylgy.util.DifficultyUtil;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.*;
+
 
 
 /**
@@ -19,9 +22,17 @@ import java.util.concurrent.*;
 public class Start extends JFrame{
     public static int cnt = 0;
     public static Eliminatebox eliminatebox = new Eliminatebox();
+    public static Setting setting;
 
-    public static Area map = BulidMap.buildMap();
-    public Start() throws HeadlessException{
+    public static Area map;
+    public Start() throws HeadlessException {
+        try {
+            setting = new Setting();
+            setting.print();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        map = BulidMap.buildMap();
         init();
         createMap();
 
@@ -83,7 +94,7 @@ public class Start extends JFrame{
     }
 
     public void refresh(){
-        ExecutorService threadPool=new ThreadPoolExecutor(1,5,
+        ExecutorService threadPool=new ThreadPoolExecutor(2,5,
                 1L,TimeUnit.SECONDS,
                 new LinkedBlockingQueue<>(3),
                 Executors.defaultThreadFactory(),
@@ -100,7 +111,18 @@ public class Start extends JFrame{
                 repaint();
             }
         };
+        Runnable difficultyCalculate = () -> {
+            while (true){
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                DifficultyUtil.paintDifficulty(DifficultyUtil.calculate(map));
+            }
+        };
         threadPool.execute(runnable);
+        threadPool.execute(difficultyCalculate);
     }
 
 
