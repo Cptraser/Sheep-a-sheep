@@ -53,6 +53,9 @@ public class DifficultyUtil {
                 m++;
             }
         }
+        if(m==0){
+            return 0;
+        }
         miu /= m;
         for(int i = 0; i < brandNames.length; ++i){
             if(cntbrand[i]>0){
