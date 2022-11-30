@@ -4,8 +4,12 @@ import ylgy.model.Area;
 import ylgy.model.Cell;
 import ylgy.model.Layer;
 
+import javax.swing.*;
 import java.util.Objects;
 
+/**
+ * @author SwordFlame
+ */
 public class DifficultyUtil {
     public static String[] brandNames={
             "刷子","剪刀","叉子",
@@ -42,17 +46,24 @@ public class DifficultyUtil {
             }
         }
         double miu = 0;
+        int m = 0;
         for(int i = 0; i < brandNames.length; ++i){
-            miu += cntbrand[i];
+            miu += cntbrand[i]%3;
+            if(cntbrand[i]>0){
+                m++;
+            }
         }
-        miu/= brandNames.length;
+        miu /= m;
         for(int i = 0; i < brandNames.length; ++i){
-            res += (miu-cntbrand[i]) * (miu-cntbrand[i]) / brandNames.length;
+            if(cntbrand[i]>0){
+                res += (miu-cntbrand[i]%3) * (miu-cntbrand[i]%3) / m;
+            }
         }
         return res;
     }
-    public static void paintDifficulty(double theta){
+    public static void paintDifficulty(double theta, JFrame self){
         System.out.println(theta);
+        self.setTitle("羊了个羊3.0, difficulty = " + theta);
     }
 
 }

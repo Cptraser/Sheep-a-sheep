@@ -63,7 +63,7 @@ public class Start extends JFrame{
         int width = 450;
         int height = 800;
         this.setSize(width, height);
-        this.setTitle("羊了个羊2.0");
+        this.setTitle("羊了个羊3.0");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
         this.setBounds(0, 0, 450, 800);
@@ -94,6 +94,7 @@ public class Start extends JFrame{
     }
 
     public void refresh(){
+        JFrame self = this;
         ExecutorService threadPool=new ThreadPoolExecutor(2,5,
                 1L,TimeUnit.SECONDS,
                 new LinkedBlockingQueue<>(3),
@@ -118,7 +119,7 @@ public class Start extends JFrame{
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                DifficultyUtil.paintDifficulty(DifficultyUtil.calculate(map));
+                DifficultyUtil.paintDifficulty(DifficultyUtil.calculate(map), self);
             }
         };
         threadPool.execute(runnable);
