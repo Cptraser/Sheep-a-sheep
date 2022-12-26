@@ -12,7 +12,7 @@ public class IntReaderUtil {
     }
 
     public int read(){
-        if(now >= readtxt.length()){
+        if(readtxt == null || now >= readtxt.length()){
             return -1;
         }
         int res = 0;

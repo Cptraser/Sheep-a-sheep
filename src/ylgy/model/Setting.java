@@ -1,8 +1,12 @@
 package ylgy.model;
 
+import ylgy.Main;
 import ylgy.util.IntReaderUtil;
-import java.io.File;
-import java.io.FileNotFoundException;
+
+import javax.swing.*;
+import java.io.*;
+import java.net.InetAddress;
+import java.net.Socket;
 import java.util.*;
 
 /**
@@ -14,18 +18,38 @@ public class Setting {
     private int[] layerY;
 
     public Setting() throws FileNotFoundException {
-//        System.out.println(file.canRead());
-        Scanner reader = new Scanner(new File(".///settings//configuration.txt"));
-        reader.nextLine();
-        IntReaderUtil readfloorHeight = new IntReaderUtil(reader.nextLine());
-        this.floorHeight = readfloorHeight.read();
-        layerX = new int[floorHeight];
-        layerY = new int[floorHeight];
-        for(int i = 0; i < floorHeight; ++i){
-            IntReaderUtil readxy = new IntReaderUtil(reader.nextLine());
-            readxy.read();
-            layerX[i] = readxy.read();
-            layerY[i] = readxy.read();
+        try {
+            Socket socket = new Socket("localhost", 8088);
+            OutputStream os = socket.getOutputStream();
+            PrintWriter pw = new PrintWriter(os);
+            pw.write("getsettings\n");
+            pw.flush();
+
+            socket.shutdownOutput();
+
+            InputStream is = socket.getInputStream();
+            BufferedReader br = new BufferedReader(new InputStreamReader(is));
+
+            br.readLine();
+            String h = br.readLine();
+            IntReaderUtil readfloorHeight = new IntReaderUtil(h);
+            this.floorHeight = readfloorHeight.read();
+            layerX = new int[floorHeight];
+            layerY = new int[floorHeight];
+            for(int i = 0; i < floorHeight; ++i){
+                IntReaderUtil readxy = new IntReaderUtil(br.readLine());
+                readxy.read();
+                layerX[i] = readxy.read();
+                layerY[i] = readxy.read();
+            }
+
+            br.close();
+            is.close();
+            os.close();
+            pw.close();
+            socket.close();
+        } catch (IOException ex){
+            throw new RuntimeException(ex);
         }
     }
 

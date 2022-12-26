@@ -1,14 +1,13 @@
 package ylgy.Bottom;
 
 import ylgy.BuildLayer;
-import ylgy.Start;
+import ylgy.UI.GameFrameUI;
 import ylgy.model.*;
 import ylgy.util.ImageUtil;
 
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
@@ -31,12 +30,12 @@ public class BottomShuffle extends JButton {
             @Override
             public void mousePressed(MouseEvent e) {
                 BottomShuffle shuffle = (BottomShuffle) e.getSource();
-                List<Layer> layers = Start.map.getLayers();
+                List<Layer> layers = GameFrameUI.map.getLayers();
                 for (Layer layer : layers){
                     layerShuffle(layer);
                 }
-                layerShuffle(Start.map.getexLayer());
-                Start.map.grayCheck();
+                layerShuffle(GameFrameUI.map.getexLayer());
+                GameFrameUI.map.grayCheck();
             }
         });
     }

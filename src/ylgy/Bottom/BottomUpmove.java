@@ -1,6 +1,6 @@
 package ylgy.Bottom;
 
-import ylgy.Start;
+import ylgy.UI.GameFrameUI;
 import ylgy.model.Brand;
 import ylgy.model.Cell;
 
@@ -25,26 +25,26 @@ public class BottomUpmove extends JButton{
             @Override
             public void mousePressed(MouseEvent e) {
                 BottomUpmove upmove = (BottomUpmove) e.getSource();
-                List<Brand> slot = Start.eliminatebox.getSlot();
+                List<Brand> slot = GameFrameUI.eliminatebox.getSlot();
                 int lim = Math.min(slot.size(), 3);
                 int i = 0;
                 Iterator<Brand> iterator = slot.iterator();
-                Cell[][] cells = Start.map.getexLayer().getCells();
+                Cell[][] cells = GameFrameUI.map.getexLayer().getCells();
                 while(i<lim && iterator.hasNext()){
                     Brand brand = iterator.next();
-                    int x = (Start.cnt % 9) * 50;
-                    int y = (Start.cnt / 9) * 50 + 400;
+                    int x = (GameFrameUI.cnt % 9) * 50;
+                    int y = (GameFrameUI.cnt / 9) * 50 + 400;
                     brand.setBounds(x, y, 50, 50);
 
-                    cells[Start.cnt/9][Start.cnt%9] = new Cell(brand);
-                    brand.setCell(cells[Start.cnt/9][Start.cnt%9]);
+                    cells[GameFrameUI.cnt/9][GameFrameUI.cnt%9] = new Cell(brand);
+                    brand.setCell(cells[GameFrameUI.cnt/9][GameFrameUI.cnt%9]);
                     iterator.remove();
                     ++i;
-                    ++Start.cnt;
+                    ++GameFrameUI.cnt;
                 }
-                Start.map.getexLayer().setCells(cells);
+                GameFrameUI.map.getexLayer().setCells(cells);
 //                Start.map.getexLayer().show();
-                Start.eliminatebox.setSlot();
+                GameFrameUI.eliminatebox.setSlot();
             }
         });
     }

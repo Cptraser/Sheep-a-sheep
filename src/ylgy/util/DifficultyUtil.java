@@ -1,5 +1,6 @@
 package ylgy.util;
 
+import ylgy.UI.GameFrameUI;
 import ylgy.model.Area;
 import ylgy.model.Cell;
 import ylgy.model.Layer;
@@ -62,6 +63,7 @@ public class DifficultyUtil {
                 res += (miu-cntbrand[i]%3) * (miu-cntbrand[i]%3) / m;
             }
         }
+        GameFrameUI.score = Math.max(GameFrameUI.score, res);
         return res;
     }
     public static void paintDifficulty(double theta, JFrame self){

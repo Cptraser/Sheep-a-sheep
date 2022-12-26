@@ -1,6 +1,6 @@
 package ylgy;
 
-import ylgy.Start;
+import ylgy.UI.GameFrameUI;
 import ylgy.model.Area;
 import ylgy.model.Layer;
 import ylgy.model.Setting;
@@ -8,7 +8,7 @@ import ylgy.model.Setting;
 public class BulidMap {
     public static Area buildMap(){
         Area map = new Area();
-        Setting setting = Start.setting;
+        Setting setting = GameFrameUI.setting;
         map.setFloorHeight(setting.getFloorHeight());
         map.setX(100);
         map.setY(200);

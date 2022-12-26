@@ -1,12 +1,8 @@
 package ylgy.Bottom;
 
-import ylgy.Start;
-import ylgy.model.Layer;
-
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.List;
 
 public class BottomRevoke extends JButton {
     private int x;

@@ -41,9 +41,9 @@ public class BuildLayer {
             brands[i + 2] = brand3;
         }
         shuffle(brands, brands.length);
-        for(int i = 0; i < brandNames.length; ++i){
+        for(int i = 0; i < brands.length; ++i){
             Brand brand = brands[i];
-            int rand = new Random().nextInt(brandNames.length);
+            int rand = new Random().nextInt(brands.length);
             brands[i] = brands[rand];
             brands[rand] = brand;
         }

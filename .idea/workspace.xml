@@ -7,8 +7,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c05195e1-e901-4c55-ba02-23c30c9245bc" name="Default" comment="游戏结束实现">
+      <change afterPath="$PROJECT_DIR$/src/ylgy/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ylgy/UI/HistoryUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ylgy/UI/PasswordwindowUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ylgy/UI/SignupUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Bottom/BottomRevoke$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Bottom/BottomRevoke$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Bottom/BottomRevoke.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Bottom/BottomRevoke.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Bottom/BottomShuffle$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Bottom/BottomShuffle$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Bottom/BottomShuffle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Bottom/BottomShuffle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Bottom/BottomUpmove$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Bottom/BottomUpmove$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/BuildLayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/BuildLayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/BulidMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/BulidMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/Start.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Area.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Area.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Brand$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Brand$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Brand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Brand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Eliminatebox.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Eliminatebox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Layer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Layer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Setting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/model/Setting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/util/DifficultyUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/util/DifficultyUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/util/IntReaderUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sheep-a-sheep/ylgy/util/IntReaderUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/Bottom/BottomRevoke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/Bottom/BottomRevoke.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/Bottom/BottomShuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/Bottom/BottomShuffle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/Bottom/BottomUpmove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/Bottom/BottomUpmove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/BuildLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/BuildLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/BulidMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/BulidMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/UI/GameFrameUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/model/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/model/Area.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/model/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/model/Brand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/model/Eliminatebox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/model/Eliminatebox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/model/Layer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/model/Layer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/model/Setting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/model/Setting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ylgy/util/DifficultyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/util/DifficultyUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ylgy/util/IntReaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ylgy/util/IntReaderUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +184,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/SwordFlame/Desktop/Sheep-a-sheep/Music&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;工件&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
@@ -162,7 +196,7 @@
       <recent name="D:\6-游戏小项目" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.ylgy.Start">
+  <component name="RunManager" selected="应用程序.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -170,13 +204,28 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="ImageUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ylgy.util.ImageUtil" />
+    <configuration name="GameFrameUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ylgy.UI.GameFrameUI" />
+      <module name="Sheep-a-sheep" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ylgy.UI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ylgy.Main" />
       <module name="Sheep-a-sheep" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ylgy.util.*" />
+          <option name="PATTERN" value="ylgy.UI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -190,7 +239,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ylgy.*" />
+          <option name="PATTERN" value="ylgy.UI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -251,21 +300,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ylgy.Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="ylgy.Start" />
-      <module name="Sheep-a-sheep" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ylgy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -292,15 +326,16 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.ImageUtil" />
+      <item itemvalue="应用程序.GameFrameUI" />
+      <item itemvalue="应用程序.Main" />
       <item itemvalue="应用程序.MySleep" />
       <item itemvalue="应用程序.Start (1)" />
       <item itemvalue="应用程序.TestRenderMap" />
-      <item itemvalue="应用程序.ylgy.Start" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.ylgy.Start" />
+        <item itemvalue="应用程序.Main" />
+        <item itemvalue="应用程序.GameFrameUI" />
       </list>
     </recent_temporary>
   </component>
@@ -413,11 +448,6 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="map.layers.get(1)" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Sheep_a_sheep$ylgy_Start.ic" NAME="ylgy.Start Coverage Results" MODIFIED="1669114777100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

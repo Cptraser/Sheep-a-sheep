@@ -1,18 +1,13 @@
 package ylgy.model;
 
-import ylgy.Start;
-import ylgy.model.History;
+import ylgy.UI.GameFrameUI;
 import ylgy.util.ImageUtil;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.util.Objects;
 import java.util.UUID;
-import java.util.*;
-import javax.swing.*;
 
 /**
  * @author SwordFlame
@@ -45,9 +40,9 @@ public class Brand extends Component{
                     System.out.println(brand.getName()+"被点击");
                     History.operate("click", brand);
                     self.getCell().setState(1);
-                    Start.eliminatebox.addSlot(brand);
-                    Start.map.grayCheck();
-                    Start.map.checkClr();
+                    GameFrameUI.eliminatebox.addSlot(brand);
+                    GameFrameUI.map.grayCheck();
+                    GameFrameUI.map.checkClr();
                 }
             }
         });

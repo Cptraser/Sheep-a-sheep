@@ -74,7 +74,7 @@ public class Layer {
     public boolean isClr(){
         for (Cell[] cell : cells) {
             for (Cell value : cell) {
-                if (value.getState() == 2) {
+                if (value!=null && value.getState() == 2) {
                     return false;
                 }
             }

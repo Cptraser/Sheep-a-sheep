@@ -1,8 +1,9 @@
-package ylgy;
+package ylgy.UI;
 
 import ylgy.Bottom.BottomRevoke;
 import ylgy.Bottom.BottomShuffle;
 import ylgy.Bottom.BottomUpmove;
+import ylgy.BulidMap;
 import ylgy.model.*;
 import ylgy.util.DifficultyUtil;
 
@@ -19,13 +20,15 @@ import java.util.concurrent.*;
 /**
  * @author SwordFlame
  */
-public class Start extends JFrame{
+public class GameFrameUI extends JFrame{
+    public static JFrame gameself;
     public static int cnt = 0;
     public static Eliminatebox eliminatebox = new Eliminatebox();
     public static Setting setting;
+    public static double score = 0;
 
     public static Area map;
-    public Start() throws HeadlessException {
+    public GameFrameUI() throws HeadlessException {
         try {
             setting = new Setting();
             setting.print();
@@ -124,10 +127,5 @@ public class Start extends JFrame{
         };
         threadPool.execute(runnable);
         threadPool.execute(difficultyCalculate);
-    }
-
-
-    public static void main(String[] args) {
-        new Start();
     }
 }
